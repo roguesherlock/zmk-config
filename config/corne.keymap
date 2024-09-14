@@ -98,21 +98,6 @@
             >;
         };
 
-        num_nav_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PAGE_UP      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PAGE_DOWN    &kp LEFT              &kp DOWN              &kp UP             &kp RIGHT        &trans      &trans
-&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans           &trans                &kp C_PREVIOUS        &kp C_PLAY_PAUSE   &kp C_NEXT       &trans      &trans
-                              &kp NUMBER_0  &trans        &trans           &trans                &trans                &trans
-            >;
-        };
-
         symbol_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -125,6 +110,21 @@
 &trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET  &trans    &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &trans  &trans
 &trans  &trans  &kp AMPERSAND    &kp ASTERISK  &trans     &trans    &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans  &trans
                                  &trans        &trans     &trans    &trans     &trans                &trans
+            >;
+        };
+
+        num_nav_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PAGE_UP      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PAGE_DOWN    &kp LEFT              &kp DOWN              &kp UP             &kp RIGHT        &trans      &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans           &trans                &kp C_PREVIOUS        &kp C_PLAY_PAUSE   &kp C_NEXT       &trans      &trans
+                              &kp NUMBER_0  &trans        &trans           &trans                &trans                &trans
             >;
         };
 
