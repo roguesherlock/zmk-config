@@ -91,9 +91,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q                 &kp W                 &kp E                     &kp R                   &kp T                  &kp Y                &kp U                     &kp I                           &kp O                   &kp P                      &kp LEFT_BRACKET
-&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm RIGHT_GUI L  &right_hrm RIGHT_ALT SEMI  &lt 3 SQT
-&trans  &kp Z                 &kp X                 &kp C                     &kp V                   &kp B                  &kp N                &kp M                     &kp COMMA                       &kp DOT                 &kp FSLH                   &kp RIGHT_BRACKET
+&trans  &kp Q                 &kp W                 &kp E                     &kp R                   &kp T                  &kp Y                &kp U                     &kp I                           &kp O                  &kp P                     &kp LEFT_BRACKET
+&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
+&trans  &kp Z                 &kp X                 &kp C                     &kp V                   &kp B                  &kp N                &kp M                     &kp COMMA                       &kp DOT                &kp FSLH                  &kp RIGHT_BRACKET
                                                     &mt LGUI TAB              &lt 1 SPACE             &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 2 SPACE               &right_hrm RIGHT_GUI BACKSPACE
             >;
         };
