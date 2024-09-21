@@ -78,6 +78,34 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <37 38 39 40 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 41>;
         };
+
+        left_shift_hrm: left_shift_hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_SHIFT_HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <100>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <39 40 41 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
+        };
+
+        right_shift_hrm: right_shift_hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_SHIFT_HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
     };
 
     keymap {
@@ -91,10 +119,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q                 &kp W                 &kp E                     &kp R                   &kp T                  &kp Y                &kp U                     &kp I                           &kp O                  &kp P                     &kp LEFT_BRACKET
-&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
-&trans  &kp Z                 &kp X                 &kp C                     &kp V                   &kp B                  &kp N                &kp M                     &kp COMMA                       &kp DOT                &kp FSLH                  &kp RIGHT_BRACKET
-                                                    &mt LGUI TAB              &lt 1 SPACE             &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 2 SPACE               &right_hrm RIGHT_GUI BACKSPACE
+&trans  &kp Q                 &kp W                 &kp E                     &kp R                         &kp T                  &kp Y                &kp U                           &kp I                           &kp O                  &kp P                     &kp LEFT_BRACKET
+&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
+&trans  &kp Z                 &kp X                 &kp C                     &kp V                         &kp B                  &kp N                &kp M                           &kp COMMA                       &kp DOT                &kp FSLH                  &kp RIGHT_BRACKET
+                                                    &mt LGUI TAB              &lt 1 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 2 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
             >;
         };
 
