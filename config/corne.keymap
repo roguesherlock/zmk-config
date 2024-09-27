@@ -34,7 +34,7 @@
         };
 
         toggle_qwerty {
-            bindings = <&tog 4>;
+            bindings = <&tog 1>;
             key-positions = <1 2 3 4>;
         };
     };
@@ -125,9 +125,18 @@
 
             bindings = <
 &trans  &kp Q                 &kp W                 &kp F                     &kp P                         &kp B                  &kp J                &kp L                           &kp U                           &kp Y                  &kp SEMI               &kp LEFT_BRACKET
-&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI R  &left_hrm LEFT_CONTROL S  &left_shift_hrm LEFT_SHIFT T  &kp G                  &kp M                &right_shift_hrm RIGHT_SHIFT N  &right_hrm RIGHT_CONTROL E      &right_hrm LEFT_GUI I  &right_hrm LEFT_ALT O  &lt 3 SQT
+&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI R  &left_hrm LEFT_CONTROL S  &left_shift_hrm LEFT_SHIFT T  &kp G                  &kp M                &right_shift_hrm RIGHT_SHIFT N  &right_hrm RIGHT_CONTROL E      &right_hrm LEFT_GUI I  &right_hrm LEFT_ALT O  &lt 4 SQT
 &trans  &kp Z                 &kp X                 &kp C                     &kp D                         &kp V                  &kp K                &kp H                           &kp COMMA                       &kp DOT                &kp FSLH               &kp RIGHT_BRACKET
-                                                    &mt LGUI TAB              &lt 1 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 2 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
+                                                    &mt LGUI TAB              &lt 2 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 3 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
+            >;
+        };
+
+        qwerty_layer {
+            bindings = <
+&trans  &kp Q                 &kp W                 &kp E                     &kp R                         &kp T                  &kp Y                &kp U                           &kp I                           &kp O                  &kp P                     &kp LEFT_BRACKET
+&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 4 SQT
+&trans  &kp Z                 &kp X                 &kp C                     &kp V                         &kp B                  &kp N                &kp M                           &kp COMMA                       &kp DOT                &kp FSLH                  &kp RIGHT_BRACKET
+                                                    &mt LGUI TAB              &lt 2 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 3 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
             >;
         };
 
@@ -167,15 +176,6 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
 &trans      &out OUT_TOG  &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-        };
-
-        qwerty_layer {
-            bindings = <
-&trans  &kp Q                 &kp W                 &kp E                     &kp R                         &kp T                  &kp Y                &kp U                           &kp I                           &kp O                  &kp P                     &kp LEFT_BRACKET
-&trans  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G                  &kp H                &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K      &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
-&trans  &kp Z                 &kp X                 &kp C                     &kp V                         &kp B                  &kp N                &kp M                           &kp COMMA                       &kp DOT                &kp FSLH                  &kp RIGHT_BRACKET
-                                                    &mt LGUI TAB              &lt 1 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 2 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
             >;
         };
     };
