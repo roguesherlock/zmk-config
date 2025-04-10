@@ -115,8 +115,8 @@
             bindings = <
 &kp TAB     &kp Q                 &kp W                 &kp E                     &kp R                         &kp T        &kp Y                 &kp U                           &kp I                       &kp O                  &kp P                     &kp BACKSPACE
 &kp ESCAPE  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G        &kp H                 &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K  &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
-&trans      &kp Z                 &kp X                 &kp C                     &kp V                         &kp B        &kp N                 &kp M                           &kp COMMA                   &kp DOT                &kp FSLH                  &kp ENTER
-                                                        &kp BACKSPACE             &lt 1 SPACE                   &kp ENTER    &kp RA(RS(RC(RCMD)))  &lt 2 SPACE                     &kp RA(RS(RCTRL))
+&kp GLOBE   &kp Z                 &kp X                 &kp C                     &kp V                         &kp B        &kp N                 &kp M                           &kp COMMA                   &kp DOT                &kp FSLH                  &kp ENTER
+                                                        &kp LGUI                  &lt 1 SPACE                   &kp ENTER    &kp RA(RS(RC(RCMD)))  &lt 2 SPACE                     &kp RA(RS(RCTRL))
             >;
         };
 
@@ -128,10 +128,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans    &kp UNDER  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &kp PLUS
-&trans     &trans     &kp DOLLAR       &kp PERCENT   &kp CARET  &trans    &trans     &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE      &trans
-&trans     &trans     &kp AMPERSAND    &kp ASTERISK  &trans     &trans    &trans     &kp SLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION  &trans
-                                       &trans        &trans     &trans    &trans     &trans         &trans
+&kp GRAVE  &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &trans    &kp UNDER  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &trans
+&trans     &trans     &kp DOLLAR       &kp PERCENT   &kp CARET  &trans    &trans     &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
+&trans     &trans     &kp AMPERSAND    &kp ASTERISK  &trans     &trans    &trans     &kp SLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION   &trans
+                                       &trans        &trans     &trans    &trans     &trans     &trans
             >;
         };
 
