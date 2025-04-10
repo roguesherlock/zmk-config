@@ -113,25 +113,10 @@
 
         qwerty_layer {
             bindings = <
-&kp TAB     &kp Q                 &kp W                 &kp E                     &kp R                         &kp T        &kp Y                          &kp U                           &kp I                       &kp O                  &kp P                     &kp BACKSPACE
-&kp ESCAPE  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G        &kp H                          &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K  &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 4 SQT
-&trans      &kp Z                 &kp X                 &kp C                     &kp V                         &kp B        &kp N                          &kp M                           &kp COMMA                   &kp DOT                &kp FSLH                  &kp ENTER
-                                                        &kp BACKSPACE             &lt 2 SPACE                   &kp ENTER    &kp RS(RA(RC(RG(RIGHT_ALT))))  &lt 3 SPACE                     &kp RA(RS(RC(RCMD)))
-            >;
-        };
-
-        colmak_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            bindings = <
-&kp TAB     &kp Q                 &kp W                 &kp F                     &kp P                         &kp B                  &kp J                &kp L                           &kp U                           &kp Y                  &kp SEMI               &kp LEFT_BRACKET
-&kp ESCAPE  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI R  &left_hrm LEFT_CONTROL S  &left_shift_hrm LEFT_SHIFT T  &kp G                  &kp M                &right_shift_hrm RIGHT_SHIFT N  &right_hrm RIGHT_CONTROL E      &right_hrm LEFT_GUI I  &right_hrm LEFT_ALT O  &lt 4 SQT
-&trans      &kp Z                 &kp X                 &kp C                     &kp D                         &kp V                  &kp K                &kp H                           &kp COMMA                       &kp DOT                &kp FSLH               &kp RIGHT_BRACKET
-                                                        &mt LGUI TAB              &lt 2 SPACE                   &mt LEFT_ALT ESCAPE    &mt RIGHT_ALT ENTER  &lt 3 SPACE                     &right_hrm RIGHT_GUI BACKSPACE
+&kp TAB     &kp Q                 &kp W                 &kp E                     &kp R                         &kp T        &kp Y                 &kp U                           &kp I                       &kp O                  &kp P                     &kp BACKSPACE
+&kp ESCAPE  &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_CONTROL D  &left_shift_hrm LEFT_SHIFT F  &kp G        &kp H                 &right_shift_hrm RIGHT_SHIFT J  &right_hrm RIGHT_CONTROL K  &right_hrm LEFT_GUI L  &right_hrm LEFT_ALT SEMI  &lt 3 SQT
+&trans      &kp Z                 &kp X                 &kp C                     &kp V                         &kp B        &kp N                 &kp M                           &kp COMMA                   &kp DOT                &kp FSLH                  &kp ENTER
+                                                        &kp BACKSPACE             &lt 1 SPACE                   &kp ENTER    &kp RA(RS(RC(RCMD)))  &lt 2 SPACE                     &kp RA(RS(RCTRL))
             >;
         };
 
@@ -168,7 +153,7 @@
         function_layer {
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &tog 1  &trans  &trans  &trans   &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
 &trans      &out OUT_TOG  &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
